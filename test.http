@@ -1,18 +1,23 @@
-GET http://localhost:5000/products HTTP/1.1  
+GET http://localhost:5000/users?limit=30 HTTP/1.1  
 
 
 ###
 
 
-POST http://localhost:5000/products HTTP/1.1
+POST http://localhost:5000/users HTTP/1.1
 Content-Type: application/json
 
 {
    
-    "name": "iphone 16"
+            "name": "yunchir",
+         "role": "A",
+     "password": "Mongol0318",
+        "email": "ukayura2033@gmail.com",
+      "contact":  "80977333",
+     "adress_1": "bayngol"
 }
 
 
 ###
 
-DELETE http://localhost:5000/products HTTP/1.1
+DELETE http://localhost:5000/users/?id=10001 HTTP/1.1
